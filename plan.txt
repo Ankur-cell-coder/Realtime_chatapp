@@ -1,10 +1,13 @@
 TODO:
   
    Create NPM Project
+   //use npm init -y in terminal.
 
    Create Index,Css,Js files
 
    Install dependancies,express,nodemon(dev dep.)
+   //for express npm install express
+   //nodemon npm install nodemon -D 
 
    Create a express server (server.js)
 
@@ -18,4 +21,3 @@ TODO:
 
    Receive message on client and display it. scrollToBottom etc...
 
-   
