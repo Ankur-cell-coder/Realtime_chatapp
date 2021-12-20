@@ -5,14 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Realtime Chat app</title>
-    <link rel="stylesheet" href="/public/style.css">
+    <link rel="stylesheet" href="/style.css">
 </head>
 
 <!-- css attached in head and javascript attached in body  -->
 
 <body>
-    <h1>Heyyy</h1>
-    <script src="public/client.js"></script>
+    <section class="chat__section">
+        <div class="brand">
+            <img height="40" src="/wassup.png" alt="">
+            <h1>wassup</h1>
+        </div>
+        <div class="message__area">
+            <div class="incoming">
+                <h4>Anshu</h4>
+                <p>Hii</p>
+            </div>
+            <div class="outgoing">
+                <h4>shivam</h4>
+                <p>Heloo</p>
+            </div>
+        </div>
+        <div>
+            <textarea id="textarea" cols="30" rows="1" placeholder="write a message"></textarea>
+        </div>
+    </section>
+    <!-- to load client library -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/client.js"></script>
 </body>
 </html>
 
