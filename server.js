@@ -27,8 +27,13 @@ app.get('/',(req,res)=>{
 
 //socket
 //import socket
-const io = require('socket.io')(http)
+const io = require('socket.io')(http);
 
 io.on('connection',(socket)=>{
     console.log('connected...')
+    //listening message which are emit from client site
+    socket.on('message',(msg)=>{
+       // console.log(msg)
+       socket.broadcast.emit('message',msg)
+    })
 })
